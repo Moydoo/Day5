@@ -10,8 +10,8 @@ namespace _2SQLRepositories
     internal class PersonsRepository
     {
         private string connectionString = "Server=(localdb)\\mssqllocaldb;Database=VolleyballDatabase;Integrated Security=True;";
-       
-        
+
+
         //SELECTING THE VALUES
         public Person[] GetPersons()
         {
@@ -68,10 +68,25 @@ namespace _2SQLRepositories
                 {
                     command.Parameters.AddWithValue("@Id", person.Id);
                     int rowsAffected = command.ExecuteNonQuery();
-                    Console.WriteLine($"{rowsAffected} rows affected.");
                 }
             }
 
+        }
+
+        //UPDATE
+        public void UpdatePerson(Person person)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand("UPDATE Persons SET FirstName = @FirstName, LastName = @LastName WHERE Id = @Id", connection))
+                {
+                    command.Parameters.AddWithValue("@Id", person.Id);
+                    command.Parameters.AddWithValue("@FirstName", person.FirstName);
+                    command.Parameters.AddWithValue("FLastName", person.LastName);
+                    int rowsAffected = command.ExecuteNonQuery();
+                }
+            }
         }
 
     }
