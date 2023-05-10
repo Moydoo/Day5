@@ -19,24 +19,24 @@ Person[] people = db.Persons.ToArray();
 
 
 
-Person person = new Person()
-{
-    FirstName = "Gimme",
-    LastName = "Rimmi"
-};
+//Person person = new Person()
+//{
+//    FirstName = "Gimme",
+//    LastName = "Rimmi"
+//};
 
 
-try
-{
-    db.Persons.Add(person);
-    db.SaveChanges();
-    Console.WriteLine("Created successfully");
-}
+//try
+//{
+//    db.Persons.Add(person);
+//    db.SaveChanges();
+//    Console.WriteLine("Created successfully");
+//}
 
-catch (SqlException)
-{
-    Console.WriteLine("No no no");
-}
+//catch (SqlException)
+//{
+//    Console.WriteLine("No no no");
+//}
 
 
 //UPDATE
