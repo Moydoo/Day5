@@ -13,7 +13,8 @@ Person newPerson = new Person()
 
 personsRepository.CreatePerson(newPerson);
 
-foreach (var p in people)
-{
-    Console.WriteLine($"Farst name is {p.FirstName} and last name is {p.LastName}");
-}
+//foreach (var p in people)
+//{
+//    Console.WriteLine($"Farst name is {p.FirstName} and last name is {p.LastName}");
+//}
+
