@@ -37,5 +37,42 @@ namespace _2SQLRepositories
             }
             return persons.ToArray();
         }
+
+
+        //INSERT INTO
+        public void CreatePerson(Person person)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+                using (SqlCommand command = new SqlCommand("INSERT INTO Persons (FirstName,LastName) VALUES (@FirstName, @LastName)", connection))
+                {
+
+                    command.Parameters.AddWithValue("@FirstName", person.FirstName);
+                    command.Parameters.AddWithValue("@LastName", person.LastName);
+                    int rowsAffected = command.ExecuteNonQuery();
+                }
+            }
+
+        }
+
+        //DELETE
+        public void DeletePerson(Person person)
+        {
+            using (SqlConnection connection = new SqlConnection(connectionString))
+            {
+                connection.Open();
+
+
+                using (SqlCommand command = new SqlCommand("DELETE FROM Persons WHERE Id = @Id", connection))
+                {
+                    command.Parameters.AddWithValue("@Id", person.Id);
+                    int rowsAffected = command.ExecuteNonQuery();
+                    Console.WriteLine($"{rowsAffected} rows affected.");
+                }
+            }
+
+        }
+
     }
 }
