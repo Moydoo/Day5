@@ -57,7 +57,7 @@ namespace _2SQLRepositories
         }
 
         //DELETE
-        public void DeletePerson(Person person)
+        public void DeletePerson(int id)
         {
             using (SqlConnection connection = new SqlConnection(connectionString))
             {
@@ -66,7 +66,7 @@ namespace _2SQLRepositories
 
                 using (SqlCommand command = new SqlCommand("DELETE FROM Persons WHERE Id = @Id", connection))
                 {
-                    command.Parameters.AddWithValue("@Id", person.Id);
+                    command.Parameters.AddWithValue("@Id", id);
                     int rowsAffected = command.ExecuteNonQuery();
                 }
             }
