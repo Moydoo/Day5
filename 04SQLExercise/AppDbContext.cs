@@ -13,7 +13,7 @@ namespace _04SQLExercise
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer("Server=localhost;Database=MyDatabase;Integrated Security = True; ");
+            optionsBuilder.UseSqlServer("Server=(localdb)\\mssqllocaldb;Database=VolleyballDatabase;Integrated Security = True; ");
         }
     }
 }
