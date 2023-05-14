@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33627.172
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "1SQLCommands", "1SQLCommands\1SQLCommands.csproj", "{12415DD2-8D49-4413-A7D5-1BBB9A5A5BC2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "1SQLCommands", "1SQLCommands\1SQLCommands.csproj", "{12415DD2-8D49-4413-A7D5-1BBB9A5A5BC2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "2SQLRepositories", "2SQLRepositories\2SQLRepositories.csproj", "{FE2B4345-86E9-4E19-9AFC-C77661ACA88A}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "2SQLRepositories", "2SQLRepositories\2SQLRepositories.csproj", "{FE2B4345-86E9-4E19-9AFC-C77661ACA88A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "03SQLExericise", "03SQLExericise\03SQLExericise.csproj", "{078C506B-D2BC-40F0-BF61-42A177BA1F34}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "03SQLExericise", "03SQLExericise\03SQLExericise.csproj", "{078C506B-D2BC-40F0-BF61-42A177BA1F34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04SQLExercise", "04SQLExercise\04SQLExercise.csproj", "{F9F9363A-838F-4DA0-AB46-3ECA81D2FDCD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "04SQLExercise", "04SQLExercise\04SQLExercise.csproj", "{F9F9363A-838F-4DA0-AB46-3ECA81D2FDCD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookLibraryHomework", "BookLibraryHomework\BookLibraryHomework.csproj", "{FD008211-F63D-43FD-ACBC-9F63DCAFA027}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{F9F9363A-838F-4DA0-AB46-3ECA81D2FDCD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F9F9363A-838F-4DA0-AB46-3ECA81D2FDCD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F9F9363A-838F-4DA0-AB46-3ECA81D2FDCD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD008211-F63D-43FD-ACBC-9F63DCAFA027}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD008211-F63D-43FD-ACBC-9F63DCAFA027}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD008211-F63D-43FD-ACBC-9F63DCAFA027}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD008211-F63D-43FD-ACBC-9F63DCAFA027}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

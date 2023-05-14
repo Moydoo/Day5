@@ -17,4 +17,4 @@ DELETE  Players where id is null
 SELECT * FROM Players
 
 INSERT INTO Players (first_name, last_name) values ('John','Adams')
-SELECT * FROM Players
+SELECT * FROM Coaches
