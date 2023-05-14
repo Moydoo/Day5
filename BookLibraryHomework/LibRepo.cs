@@ -257,8 +257,8 @@ namespace BookLibraryHomework
                     }
                     break;
                 case 3:
-                    //Update book
-                    // Get the book ID from the user
+                    //Update borrower
+                    // Get the borrower ID from the user
                     Borrower[] borrowerItem = borrowerRepository.GetBorrowers();
                     Console.Write("Enter the borrower ID: ");
                     if (int.TryParse(Console.ReadLine(), out int borrowerId))
